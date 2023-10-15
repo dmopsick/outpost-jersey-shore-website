@@ -124,3 +124,40 @@ a {
   margin: 50px !important;
   /* background-color: #a7171a !important; */
 }
+
+/* Homepage slideshow */
+
+.sectionWithBackgroundImage {
+  display: none;
+  height: 825px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+} 
+
+#outpostWithFlagSlide {
+  display: block;
+  background-image: url('/public/images/outpostWithFlag.jpg');
+}
+
+#olympicPadsSlide {
+
+}
+
+#squatRacksSlide {
+
+}
+
+#turfSlide {
+
+}
+
+#smallOutpostSlide {
+
+}
+
+#largeOutpostSlide {
+
+}
+
+

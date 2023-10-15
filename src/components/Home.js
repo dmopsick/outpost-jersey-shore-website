@@ -1,5 +1,5 @@
-import GymTourVideo from '../video/gymTourVideo.mp4';
-import Logo from '../logo.svg';
+import React, { useEffect } from 'react';
+import Logo from '../images/logo1200.png';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 import AddIcon from '@mui/icons-material/Add';
@@ -34,57 +34,44 @@ const useStyles = makeStyles(theme => ({
 
 export default function Home() {
     const classes = useStyles();
+    var myIndex = 1; // Holds place in the slideshow
+
+    useEffect( () => {
+
+        const backgroundSlider = setInterval(() => {
+            var i;
+            var x = document.querySelectorAll('.sectionWithBackgroundImage');
+      
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1;
+            } 
+            // Hide previous   
+            x[myIndex-1].style.display = "block";    
+            
+            }, 3000);
+          
+
+        return () => clearInterval(backgroundSlider);
+    });
 
     return (
         <div className={classes.homeContainer}>
             <div className="section">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    style={{
-                        positon: "absolute",
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        zIndex: "-100",
-                        filter: "grayscale(100%)"
-                    }}
-                >
-                    <source src={GymTourVideo} type="video/mp4" />
-                </video>
-                <div style={{   
-                        zIndex: "100",
-                        position: "absolute",
-                        width: "100%",
-                        top: "20%",
-                        display: "flex",
-                        flexWrap: "wrap",
-                        justifyContent: "center",
-                        alignContent: "center"
-                    }}
-                >
-                    <img src={Logo}
-                        alt="Garden State Performance Logo"
-                        style={{
-                            width: "50%",
-                            flexBasis: "20%"
-                        }}
-                    />
-
-                    <Link to="info"
-                        smooth={true}
-                        duration={500}
-                        style={{
-                            color: "white",
-                            flexBasis: "100%"
-                        }}>
-                            
-                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
-                    </Link>
-                    
+                <div id="outpostWithFlagSlide" className='sectionWithBackgroundImage'>
+                    <div className={classes.movingArrowContainer}>
+                        <Link to="welcome"
+                            smooth={true}
+                            duration={500}
+                            style={{color: "white", flexBasis: "100%"}}>
+                            <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                        </Link>
+                    </div>   
                 </div>
+
             </div>
         
             <div id="info" className='section'>
