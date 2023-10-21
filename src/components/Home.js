@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     homeContainer: {
         color: "white",
         background: "black",
-        textAlign: "center"  
+        textAlign: "center"
     },
 
     hoursLink: {
@@ -29,31 +29,31 @@ const useStyles = makeStyles(theme => ({
         width: "90%",
         marginBottom: "20px"
     }
-    
+
 }));
 
 export default function Home() {
     const classes = useStyles();
     var myIndex = 1; // Holds place in the slideshow
 
-    useEffect( () => {
+    useEffect(() => {
 
         const backgroundSlider = setInterval(() => {
             var i;
             var x = document.querySelectorAll('.sectionWithBackgroundImage');
-      
+
             for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
+                x[i].style.display = "none";
             }
             myIndex++;
             if (myIndex > x.length) {
                 myIndex = 1;
-            } 
+            }
             // Hide previous   
-            x[myIndex-1].style.display = "block";    
-            
-            }, 3000);
-          
+            x[myIndex - 1].style.display = "block";
+
+        }, 3000);
+
 
         return () => clearInterval(backgroundSlider);
     });
@@ -66,118 +66,115 @@ export default function Home() {
                         <Link to="welcome"
                             smooth={true}
                             duration={500}
-                            style={{color: "white", flexBasis: "100%"}}>
-                            <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                            style={{ color: "white", flexBasis: "100%" }}>
+                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
                         </Link>
-                    </div>   
+                    </div>
+                </div>
+
+                <div id="turfSlide" className='sectionWithBackgroundImage'>
+                    <div className={classes.movingArrowContainer}>
+                        <Link to="welcome"
+                            smooth={true}
+                            duration={500}
+                            style={{ color: "white", flexBasis: "100%" }}>
+                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                        </Link>
+                    </div>
+                </div>
+
+                <div id="largeOutpostSlide" className='sectionWithBackgroundImage'>
+                    <div className={classes.movingArrowContainer}>
+                        <Link to="welcome"
+                            smooth={true}
+                            duration={500}
+                            style={{ color: "white", flexBasis: "100%" }}>
+                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                        </Link>
+                    </div>
+                </div>
+
+                <div id="squatRacksSlide" className='sectionWithBackgroundImage'>
+                    <div className={classes.movingArrowContainer}>
+                        <Link to="welcome"
+                            smooth={true}
+                            duration={500}
+                            style={{ color: "white", flexBasis: "100%" }}>
+                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                        </Link>
+                    </div>
+                </div>
+
+                <div id="olympicPadsSlide" className='sectionWithBackgroundImage'>
+                    <div className={classes.movingArrowContainer}>
+                        <Link to="welcome"
+                            smooth={true}
+                            duration={500}
+                            style={{ color: "white", flexBasis: "100%" }}>
+                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                        </Link>
+                    </div>
+                </div>
+
+                <div id="smallOutpostSlide" className='sectionWithBackgroundImage'>
+                    <div className={classes.movingArrowContainer}>
+                        <Link to="welcome"
+                            smooth={true}
+                            duration={500}
+                            style={{ color: "white", flexBasis: "100%" }}>
+                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                        </Link>
+                    </div>
                 </div>
 
             </div>
-        
+
             <div id="info" className='section'>
-                <h1 className='sectionHeader'>Movement. Strength. Performance.</h1> 
-                <p className='sectionCaption'>Become a better human - a better athlete - a better player</p>
-                    
-                    <Button className='button' 
-                        variant="contained" 
-                        size="large"
-                        href="/athletes">
-                            Athletes
-                        </Button>
-                    
-               
-                    
-                    <Button className='button'
-                        variant="contained" 
-                        size="large"
-                        href="adults">
-                            Adult Fitness
-                    </Button>
-                    
-                    <Link to="training"
-                        smooth={true}
-                        duration={500}
-                        style={{
-                            textDecoration: "none",
-                            color: "white"
-                        }}
-                    >
-                        <h1>Training at GSP <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
-                    </Link>
-                </div>
+                <h1 className='sectionHeader'>Outpost Jersey Shore</h1>
+                <p className='sectionCaption'>
+                    Outpost Jersey Shore is a 24/7-365 day Strength and Conditioning Facility located in Monmouth County.
+                    With flexible membership options, and availability of space and time slots for trainers and other fitness professionals,
+                    Outpost is the Jersey Shore's fitness and performance hub. Packed into our garage gym set up is everything you need for a killer workout, including:
+                </p>
+                
+                <ul className='infoList'>
+                    <li className='infoListItem'>3 Squat Racks</li>
+                    <li className='infoListItem'>2 Deadlift Platforms</li>
+                    <li className='infoListItem'>Nearly 30 yards of turf for carries, drags, and other athletic/functional movements</li>
+                    <li className='infoListItem'>Sleds, kettlebells, Farmer's Carry bars and other fun “odd object” implements to spice up a training routine</li>
+                    <li className='infoListItem'>A group of awesome people that make up the heart and soul of our space.</li>
+                </ul>
 
-                <div id="training" className='section redBackground'>
-                    <h1 className='sectionHeader'>Training at GSP</h1>
-                    <p className='sectionCaption'>How we do things</p>
-                    <ul className='infoList'>
-                        <li className='infoListItem'>Learn the proper movement patterns for athletic efficiency and performance</li>
-                        <li className='infoListItem'>Develop Power, Strength, and Speed for your sport</li>
-                        <li className='infoListItem'>Explore the boundaries of your athleticism and express your full abilities</li>
-                        <li className='infoListItem'>Develop confidence and self-reliance in a competitive environment</li>
-                        <li className='infoListItem'>Become battle-tested in your off-seasons to be ready for the main event</li>
-                    </ul>
-                    <Link to="signUp" 
-                        smooth={true}
-                        duration={500}
-                        style={{
-                            textDecoration: "none",
-                            color: "white"
-                        }}
-                    >
-                        <h1>Sign Up <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
-                    </Link>
-                </div>
-
-                <div id="signUp"
-                    className='section'
+                <Link to="training"
+                    smooth={true}
+                    duration={500}
                     style={{
-                        height: "875px"
+                        textDecoration: "none",
+                        color: "white"
                     }}
                 >
-                    <h1 className='sectionHeader'>What Do the People Think of GSP?</h1>
-
-                    <p className={classes.testimonialText}>
-                        <em>
-                            Great place to workout. My son is a football player who loves to workout here.
-                            Great people and awesome motivators. He has helped my son transform his body for football. 
-                            Highly recommend this place. Shane is the best!”
-                        </em> - Jill B. of Neptune, son Avery plays football for Red Bank Catholic
-
-                    </p>
-
-                    <p className={classes.testimonialText}>
-                        <em>
-                            You will not be disappointed in this gym at all. All three of my kids are members here and they absolutely love it. 
-                            My oldest son is now a freshman in college on the Wrestling team lifting more than most on his team. 
-                            GSP is 100% the reason for this. The BEST, go check them out.
-                        </em> - The Levies of Neptune, all three boys are members with the oldest, Nate, wrestling Division 2 at Seton Hill University
-                    </p>
-
-                    <p className={classes.testimonialText}>
-                        <em>
-                            I&#8217;ve  been to so many gyms and none compare to Garden State Performance. Every day is different and challenging and the results are awesome!
-                        </em> - Esther D., adult fitness client and avid pickleball player
-                    </p>
-
-                    <p className={classes.testimonialText}>
-                        <em>
-                            GSP is a welcoming place designed for all levels and ages. 
-                            Work out at your own pace, increasing levels and timing each week. 
-                            Challenging while gaining endurance and strength.
-                        </em> - Tom K. of Eatontown, adult fitness client/legend
-                    </p>
-
-                    <a 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        href="https://forms.gle/26EjLbeDkoVDGhU78"
-                    >
-                        <h2>Become a Member <AddIcon /></h2>
-                    </a>
-
-                </div>
-
+                    <h1>JOIN <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
+                </Link>
             </div>
+
+            <div id="training" className='section redBackground'>
+                <h1 className='sectionHeader'>Join our community</h1>
+      
+                <Button className='button'
+                    variant="contained"
+                    size="large"
+                    href="https://theoutpost.gymmasteronline.com/portal/signup">
+                    SIGN UP
+                </Button>
+
+                <Button className='button'
+                    variant="contained"
+                    size="large"
+                    href="https://forms.gle/ARkPTHWgBxu76Pny7">
+                    LEARN MORE
+                </Button>
+            </div>
+        </div>
 
     )
 }
