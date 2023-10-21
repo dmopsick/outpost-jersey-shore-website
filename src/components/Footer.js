@@ -1,6 +1,5 @@
 
 import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function Footer() {
 
@@ -25,16 +24,8 @@ export default function Footer() {
                         <a className='socialIconLink'
                             target="_blank"
                             rel="noreferrer" 
-                            href="https://www.instagram.com/shanenolan_/">
+                            href="https://www.instagram.com/outpostjerseyshore/">
                             <InstagramIcon fontSize='large' />
-                        </a>
-                    </div>
-                    <div className='socialIconContainer'>
-                        <a className='socialIconLink'
-                            target="_blank"
-                            rel="noreferrer" 
-                            href="https://www.youtube.com/channel/UC_PjfKHV8wfWTIinmjaHPLg">
-                            <YouTubeIcon fontSize='large' />
                         </a>
                     </div>
             </div>

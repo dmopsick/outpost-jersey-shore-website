@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react';
-import Logo from '../images/logo1200.png';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
-import AddIcon from '@mui/icons-material/Add';
 import { Link } from "react-scroll";
 import Button from '@mui/material/Button';
 
 const useStyles = makeStyles(theme => ({
     movingArrow: {
         animation: "arrow-jump 1s infinite",
-        color: "skyblue"
+        color: "white"
     },
 
     homeContainer: {
@@ -28,15 +26,34 @@ const useStyles = makeStyles(theme => ({
         margin: "auto",
         width: "90%",
         marginBottom: "20px"
+    },
+
+    landingPageLogoContainer: {
+        zIndex: "100",
+        position: "absolute",
+        width: "100%",
+        top: "25%",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignContent: "center",
+    },
+
+    landingPageLogo: {
+        width: "50%",
+        flexBasis: "20%",
+        maxHeight: "500px",
+        maxWidth: "250px",
+        opacity: "60%"
     }
 
 }));
 
 export default function Home() {
     const classes = useStyles();
-    var myIndex = 1; // Holds place in the slideshow
-
+    
     useEffect(() => {
+        var myIndex = 1; // Holds place in the slideshow
 
         const backgroundSlider = setInterval(() => {
             var i;
@@ -63,80 +80,141 @@ export default function Home() {
             <div className="section">
                 <div id="outpostWithFlagSlide" className='sectionWithBackgroundImage'>
                     <div className={classes.movingArrowContainer}>
-                        <Link to="welcome"
-                            smooth={true}
-                            duration={500}
-                            style={{ color: "white", flexBasis: "100%" }}>
-                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                        </Link>
+
+                        <div class={classes.landingPageLogoContainer}>
+                            <img src="/logo1200.png"
+                                alt="Outpost Jersey Shore Logo Logo"
+                                className={classes.landingPageLogo}
+                            />
+
+                            <Link to="section2"
+                                smooth={true}
+                                duration={500}
+                                style={{
+                                    color: "white",
+                                    flexBasis: "100%"
+                                }}>
+                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
                 <div id="turfSlide" className='sectionWithBackgroundImage'>
                     <div className={classes.movingArrowContainer}>
-                        <Link to="welcome"
-                            smooth={true}
-                            duration={500}
-                            style={{ color: "white", flexBasis: "100%" }}>
-                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                        </Link>
+                        <div class={classes.landingPageLogoContainer}>
+                            <img src="/logo1200.png"
+                                alt="Outpost Jersey Shore Logo Logo"
+                                className={classes.landingPageLogo}
+                            />
+
+                            <Link to="section2"
+                                smooth={true}
+                                duration={500}
+                                style={{
+                                    color: "white",
+                                    flexBasis: "100%"
+                                }}>
+                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
                 <div id="largeOutpostSlide" className='sectionWithBackgroundImage'>
                     <div className={classes.movingArrowContainer}>
-                        <Link to="welcome"
-                            smooth={true}
-                            duration={500}
-                            style={{ color: "white", flexBasis: "100%" }}>
-                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                        </Link>
+                        <div class={classes.landingPageLogoContainer}>
+                            <img src="/logo1200.png"
+                                alt="Outpost Jersey Shore Logo Logo"
+                                className={classes.landingPageLogo}
+                            />
+
+                            <Link to="section2"
+                                smooth={true}
+                                duration={500}
+                                style={{
+                                    color: "white",
+                                    flexBasis: "100%"
+                                }}>
+                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
                 <div id="squatRacksSlide" className='sectionWithBackgroundImage'>
                     <div className={classes.movingArrowContainer}>
-                        <Link to="welcome"
-                            smooth={true}
-                            duration={500}
-                            style={{ color: "white", flexBasis: "100%" }}>
-                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                        </Link>
+                        <div class={classes.landingPageLogoContainer}>
+                            <img src="/logo1200.png"
+                                alt="Outpost Jersey Shore Logo Logo"
+                                className={classes.landingPageLogo}
+                            />
+
+                            <Link to="section2"
+                                smooth={true}
+                                duration={500}
+                                style={{
+                                    color: "white",
+                                    flexBasis: "100%"
+                                }}>
+                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
                 <div id="olympicPadsSlide" className='sectionWithBackgroundImage'>
                     <div className={classes.movingArrowContainer}>
-                        <Link to="welcome"
-                            smooth={true}
-                            duration={500}
-                            style={{ color: "white", flexBasis: "100%" }}>
-                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                        </Link>
+                        <div class={classes.landingPageLogoContainer}>
+                            <img src="/logo1200.png"
+                                alt="Outpost Jersey Shore Logo Logo"
+                                className={classes.landingPageLogo}
+                            />
+
+                            <Link to="section2"
+                                smooth={true}
+                                duration={500}
+                                style={{
+                                    color: "white",
+                                    flexBasis: "100%"
+                                }}>
+                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
                 <div id="smallOutpostSlide" className='sectionWithBackgroundImage'>
                     <div className={classes.movingArrowContainer}>
-                        <Link to="welcome"
-                            smooth={true}
-                            duration={500}
-                            style={{ color: "white", flexBasis: "100%" }}>
-                            <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                        </Link>
+                        <div class={classes.landingPageLogoContainer}>
+                            <img src="/logo1200.png"
+                                alt="Outpost Jersey Shore Logo Logo"
+                                className={classes.landingPageLogo}
+                            />
+
+                            <Link to="section2"
+                                smooth={true}
+                                duration={500}
+                                style={{
+                                    color: "white",
+                                    flexBasis: "100%"
+                                }}>
+                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-            <div id="info" className='section'>
+            <div id="section2" className='section'>
                 <h1 className='sectionHeader'>Outpost Jersey Shore</h1>
                 <p className='sectionCaption'>
                     Outpost Jersey Shore is a 24/7-365 day Strength and Conditioning Facility located in Monmouth County.
                     With flexible membership options, and availability of space and time slots for trainers and other fitness professionals,
                     Outpost is the Jersey Shore's fitness and performance hub. Packed into our garage gym set up is everything you need for a killer workout, including:
                 </p>
-                
+
                 <ul className='infoList'>
                     <li className='infoListItem'>3 Squat Racks</li>
                     <li className='infoListItem'>2 Deadlift Platforms</li>
@@ -157,10 +235,11 @@ export default function Home() {
                 </Link>
             </div>
 
-            <div id="training" className='section redBackground'>
+            <div id="training" className='section'>
                 <h1 className='sectionHeader'>Join our community</h1>
-      
+
                 <Button className='button'
+                    target="_blank"
                     variant="contained"
                     size="large"
                     href="https://theoutpost.gymmasteronline.com/portal/signup">
@@ -168,6 +247,8 @@ export default function Home() {
                 </Button>
 
                 <Button className='button'
+                    target="_blank"
+                    
                     variant="contained"
                     size="large"
                     href="https://forms.gle/ARkPTHWgBxu76Pny7">

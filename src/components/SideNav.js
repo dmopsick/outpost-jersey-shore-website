@@ -8,15 +8,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
-import ScheduleIcon from '@mui/icons-material/Schedule';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
-import SportsFootballIcon from '@mui/icons-material/SportsFootball';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
-// import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
-
 export default function SideNav() {
     const [state, setState] = React.useState({
         left: false
@@ -57,92 +51,33 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/about">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <AccountCircleIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                About GSP
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
-
-                <a className='linkNoDecoration' href="/programming">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <FitnessCenterIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Our Programming
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
-
-                <a className='linkNoDecoration' href="/athletes">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <SportsFootballIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Athletes
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
-
-                <a className='linkNoDecoration' href="/adults">
+                <a className='linkNoDecoration'
+                     href="/https://theoutpost.gymmasteronline.com/portal/signup"
+                     target="_blank"
+                     rel="noreferrer">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
                                 <DirectionsRunIcon />
                             </ListItemIcon>
                             <ListItemText>
-                                Adult Fitness
+                                Join
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/hours">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <ScheduleIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Hours
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
-
-                {/* <a className='linkNoDecoration' href="/pricing">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <RequestQuoteIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Pricing
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a> */}
-
-                <a className='linkNoDecoration' href="/contact">
+                <a className='linkNoDecoration' 
+                    href="https://forms.gle/ARkPTHWgBxu76Pny7"
+                    target="_blank"
+                    rel="noreferrer">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
                                 <ConnectWithoutContactIcon />
                             </ListItemIcon>
                             <ListItemText>
-                                Contact Us
+                                Learn More
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
