@@ -35,16 +35,15 @@ export default function Footer() {
                     style={{
                         color: "white"
                     }}
-                >GardenStatePerf@gmail.com </a>
+                >outpostjerseyshore@gmail.com </a>
                 •
-                732-245-7494 
+                732-807-5354
             </p>
             <p>
                 1701 Valley Road Unit E, Ocean, NJ 07712
             </p>
             <hr />
         
-
         </div>
     )
 
