@@ -52,7 +52,7 @@ export default function SideNav() {
                 </a>
 
                 <a className='linkNoDecoration'
-                     href="/https://theoutpost.gymmasteronline.com/portal/signup"
+                     href="https://theoutpost.gymmasteronline.com/portal/signup"
                      target="_blank"
                      rel="noreferrer">
                     <ListItem disablePadding>
