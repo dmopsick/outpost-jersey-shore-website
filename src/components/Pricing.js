@@ -39,8 +39,6 @@ export default function Pricing() {
 
             </div>
 
-
-
             <p className="largeBodyText">
                 Athlete sessions designed for middle school + high school athletes of all ability levels.
                 <br /><br />
