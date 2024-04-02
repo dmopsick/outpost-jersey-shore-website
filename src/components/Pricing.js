@@ -1,53 +1,134 @@
 
 export default function Pricing() {
     return (
-        <div className='paddingBottom pageContainer redBackground'>
-            <h1 className='sectionHeader'>GSP Pricing</h1>
+        <div className='paddingBottom pageContainer black-background'>
+            <h1 className='sectionHeader'>Outpost Group Coaching Schedule Spring 2024</h1>
 
             <h2 className='sectionSubheader'>Athletes</h2>
-            <p className='largeBodyText'>
-                Month-to-Month** = $300 per month <br/>
-                6 month paid in full (PIF) = $1650 (1 free month) <br/>
-                1 year PIF = $2400 (4 free months) <br/>
-            </p>
-            <p className='centerText'>
-                *Ask about in-season athlete discounts! <br/>
-                **2-month minimum commitment
-            </p>
+            <p className="sectionCaption"><em>Each session is 45-60 minutes in duration.</em></p>
 
-            
-            <h2 className='sectionSubheader marginTop'>Adult Fitness</h2>
-            <p className='largeBodyText'>
-                Month-to-Month** $300 per month <br/>
-                6 month paid in full (PIF) = $1650 (1 free month) <br/>
-                1 year PIF = $2400 (4 free months) <br/>
-            </p>
-            <p className='centerText'>
-                **2-month minimum commitment
-            </p>
+            <div className='schedule-container'>
+                <p className='sectionCaption'>
+                    Monday
+                </p>
 
-            <h2 className='sectionSubheader marginTop'>Other</h2>
-            <p className='largeBodyText'>
-                Day Rate = $20 per day • credit card not accepted <br/>
-                10 Visit pass = $150 ($15 per visit) <br/>
-                Private Speed Sessions = $50 per 30 minutes <br/>
-            </p>
-            
-            <h2 className='sectionSubheader marginTop'>Personal Training</h2>
-            <p className='largeBodyText'>
-                1 on 1 Training $100 per hour or $850 per month <br/>
-            </p>
-            <p className='marginTop centerText'>
-                Purchases of multiple sessions can be discussed - cost discounted per session <br/>
-                Inquire about family member discounts and team discounts
-            </p>
+                <ul className="infoList">
+                    <li className="infoListItem">3 pm</li>
+                    <li className="infoListItem">4 pm</li>
+                    <li className="infoListItem">5 pm</li>
+                </ul>
 
-            <div className='centerText marginTop largeBodyText'>
-                <a target="_blank" rel="noreferrer" href="/resources/GSP-Price-Sheet.pdf">
-                    Garden State Performance Pricing PDF
-                </a>
+                <p className='sectionCaption'>
+                    Wednesday
+                </p>
+
+                <ul className="infoList">
+                    <li className="infoListItem">3 pm</li>
+                    <li className="infoListItem">4 pm</li>
+                    <li className="infoListItem">5 pm</li>
+                </ul>
+
+                <p className='sectionCaption'>
+                    Friday
+                </p>
+
+                <ul className="infoList">
+                    <li className="infoListItem">3 pm</li>
+                    <li className="infoListItem">4 pm</li>
+                </ul>
+
             </div>
 
+
+
+            <p className="largeBodyText">
+                Athlete sessions designed for middle school + high school athletes of all ability levels.
+                <br /><br />
+                We do our best to meet the athlete where they are at and address specific needs with a generalized, effective, stimulating training environment.
+                <br /><br />
+                Outdoor/Speed Work Subject to Weather
+            </p>
+
+            <h2 className='sectionSubheader marginTop'>Adults</h2>
+            <p className="sectionCaption"><em>Each session is 45-60 minutes in duration.</em></p>
+
+            <div className='schedule-container'>
+                <p className='sectionCaption'>
+                    Monday
+                </p>
+
+                <ul className="infoList">
+                    <li className="infoListItem">8 am</li>
+                    <li className="infoListItem">9 am</li>
+                    <li className="infoListItem">3 pm</li>
+                    <li className="infoListItem">4 pm</li>
+                    <li className="infoListItem">5 pm</li>
+                </ul>
+
+                <p className='sectionCaption'>
+                    Tuesday
+                </p>
+
+                <ul className="infoList">
+                    <li className="infoListItem">8 am</li>
+                    <li className="infoListItem">9 am</li>
+                </ul>
+
+                <p className='sectionCaption'>
+                    Wednesday
+                </p>
+
+                <ul className="infoList">
+                    <li className="infoListItem">8 am</li>
+                    <li className="infoListItem">9 am</li>
+                    <li className="infoListItem">3 pm</li>
+                    <li className="infoListItem">4 pm</li>
+                    <li className="infoListItem">5 pm</li>
+                </ul>
+
+                <p className='sectionCaption'>
+                    Thursday
+                </p>
+
+                <ul className="infoList">
+                    <li className="infoListItem">8 am</li>
+                    <li className="infoListItem">9 am</li>
+                </ul>
+
+                <p className='sectionCaption'>
+                    Friday
+                </p>
+
+                <ul className="infoList">
+                    <li className="infoListItem">8 am</li>
+                    <li className="infoListItem">9 am</li>
+                    <li className="infoListItem">3 pm</li>
+                    <li className="infoListItem">4 pm</li>
+                </ul>
+
+            </div>
+
+
+            <h1 className='sectionHeader'>Outpost Group Coaching Pricing (Athletes + Adults)</h1>
+
+            <ul className="infoList sectionSubheader">
+                <li className="infoListItem">$250 per month for unlimited classes.</li>
+                <li className="infoListItem">$40 for a single drop-in class.</li>
+            </ul>
+
+            <p className="largeBodyText">
+                Each group class membership includes 24/7 access during non-coaching hours.
+                <br /><br />
+                *Inquire about team / family discounts…
+            </p>
+
+            <p className="largeBodyText">
+                Private and Small Group (5 people or less) is also available with Coach Shane & Coach Rob.
+            </p>
+
+            <p className="largeBodyText">
+                Go to the ‘Learn More’ link on our homepage if interested.
+            </p>
         </div>
     )
 

@@ -37,7 +37,7 @@ export default function Footer() {
                     }}
                 >outpostjerseyshore@gmail.com </a>
                 •
-                732-807-5354
+                732-245-7494
             </p>
             <p>
                 1701 Valley Road Unit E, Ocean, NJ 07712

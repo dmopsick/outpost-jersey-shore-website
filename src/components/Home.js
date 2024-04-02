@@ -10,12 +10,6 @@ const useStyles = makeStyles(theme => ({
         color: "white"
     },
 
-    homeContainer: {
-        color: "white",
-        background: "black",
-        textAlign: "center"
-    },
-
     hoursLink: {
         color: "skyblue",
         fontSize: "32px",
@@ -51,7 +45,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Home() {
     const classes = useStyles();
-    
+
     useEffect(() => {
         var myIndex = 1; // Holds place in the slideshow
 
@@ -76,7 +70,7 @@ export default function Home() {
     });
 
     return (
-        <div className={classes.homeContainer}>
+        <div className='home-container center-text black-background'>
             <div className="section">
                 <div id="outpostWithFlagSlide" className='sectionWithBackgroundImage'>
                     <div className={classes.movingArrowContainer}>
@@ -207,14 +201,17 @@ export default function Home() {
 
             </div>
 
-            <div id="section2" className='section'>
+            <div id="section2" className='longSection'>
                 <h1 className='sectionHeader'>Outpost Jersey Shore</h1>
                 <p className='sectionCaption'>
-                    Outpost Jersey Shore is a 24/7-365 day Strength and Conditioning Facility located in Monmouth County.
-                    With flexible membership options, and availability of space and time slots for trainers and other fitness professionals,
-                    Outpost is the Jersey Shore's fitness and performance hub. Packed into our garage gym set up is everything you need for a killer workout, including:
+                    Outpost Jersey Shore is a 24/7-365 Strength and Conditioning Facility located in Monmouth County.  With group and private coaching options for adults and athletes of all backgrounds, flexible memberships, and usage of the facility for outside trainers and other fitness professionals, Outpost is the Jersey Shore’s fitness and performance hub.
+                    Outpost is a community full of movers and doers supporting each other in their individual pursuit of every different goal that enters our facility. Our amazing collective of individuals creates a unique environment and family feel that will make Outpost your home away from home… hence the 24/7 access!
                 </p>
 
+
+                <p className='sectionCaption'>
+                    Packed into our garage gym set up is everything you need for a killer workout, including:
+                </p>
                 <ul className='infoList'>
                     <li className='infoListItem'>3 Squat Racks</li>
                     <li className='infoListItem'>2 Deadlift Platforms</li>
@@ -237,6 +234,12 @@ export default function Home() {
 
             <div id="training" className='section'>
                 <h1 className='sectionHeader'>Join our community</h1>
+                <p className='sectionCaption'>
+                    Need a little coaching guidance to get started? Tap in with Coach Shane and Coach Rob to get started with some coaching to take your game and your fitness journey to the next level - go to ‘Learn More’ to inquire about coaching
+                    <br/>
+                    Otherwise get yourself rolling with our online sign-up - hit the link, fill out some basic info, and get started today!
+
+                </p>
 
                 <Button className='button'
                     target="_blank"
@@ -248,7 +251,7 @@ export default function Home() {
 
                 <Button className='button'
                     target="_blank"
-                    
+
                     variant="contained"
                     size="large"
                     href="https://forms.gle/ARkPTHWgBxu76Pny7">

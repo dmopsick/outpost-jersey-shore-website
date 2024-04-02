@@ -1,24 +1,36 @@
-
 @keyframes arrow-jump {
-  0%   { opacity: 0;}
-  100% { opacity: 1; 
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
     -webkit-transform: translateY(10px);
     -moz-transform: translateY(10px);
     -o-transform: translateY(10px);
     transform: translateY(10px);
-    }  
+  }
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
   font-family: "Bebas Neue" !important;
   font-weight: bold !important;
 }
 
-p, a, label, span, li {
+p,
+a,
+label,
+span,
+li {
   font-family: "Varta" !important;
 }
 
@@ -31,6 +43,7 @@ p, a, label, span, li {
 
 .infoListItem {
   margin-bottom: 5px;
+  text-align: left;
 }
 
 .sectionHeader {
@@ -88,6 +101,23 @@ a {
   background-color: #a7171a;
 }
 
+.black-background {
+  background: #100c08;
+}
+
+.home-container {
+  color: "white",
+}
+
+.center-text {
+  text-align: center;
+}
+
+.schedule-container {
+  margin: auto;
+  width: 50%;
+}
+
 .linkNoDecoration {
   color: rgb(0, 0, 0, 0.87);
   text-decoration: none;
@@ -134,8 +164,8 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 80%;
- 
-} 
+
+}
 
 #outpostWithFlagSlide {
   display: block;
@@ -161,5 +191,3 @@ a {
 #largeOutpostSlide {
   background-image: url('/public/images/largeOutpost.jpg');
 }
-
-

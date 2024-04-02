@@ -11,6 +11,8 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+
 export default function SideNav() {
     const [state, setState] = React.useState({
         left: false
@@ -46,6 +48,21 @@ export default function SideNav() {
                             </ListItemIcon>
                             <ListItemText>
                             Home
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='linkNoDecoration'
+                     href="/pricing"
+                     rel="noreferrer">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <CalendarMonthIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Schedule/Pricing
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
