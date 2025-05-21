@@ -11,7 +11,6 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -53,7 +52,7 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration'
+                {/* <a className='linkNoDecoration'
                      href="/pricing"
                      rel="noreferrer">
                     <ListItem disablePadding>
@@ -66,7 +65,7 @@ export default function SideNav() {
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
-                </a>
+                </a> */}
 
                 <a className='linkNoDecoration'
                      href="https://theoutpost.gymmasteronline.com/portal/signup"
