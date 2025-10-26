@@ -2,7 +2,7 @@ import AddIcon from '@mui/icons-material/Add';
 
 export default function Adults() {
     return (
-        <div className='page-container redBackground'>
+        <div className='page-container red-background'>
             <div className='padding-bottom'>
             <h1 className='sectionHeader'>Adult Fitness</h1>
                 <a 

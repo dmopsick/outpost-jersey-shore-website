@@ -2,8 +2,8 @@
 export default function Programming() {
 
     return(
-        <div className='page-container redBackground'>
-            <div className='longSection'>
+        <div className='page-container red-background'>
+            <div className='long-section'>
                 <h1 className='sectionHeader'>Our Programming</h1>
                 <h4 className='section-subheader'>Athletes</h4>
                 <p className='large-body-text'>

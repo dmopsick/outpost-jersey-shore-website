@@ -20,7 +20,7 @@ export default function Merch() {
 
 
     return(
-        <div className='longSection page-container redBackground center-text'>
+        <div className='long-section page-container red-background center-text'>
             <h1 className='sectionHeader'>Merch</h1>
             <p className='section-caption'>Represent GSP.</p>
             
