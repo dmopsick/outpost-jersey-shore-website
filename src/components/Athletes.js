@@ -3,7 +3,7 @@ import AddIcon from '@mui/icons-material/Add';
 export default function Athletes() {
 
     return(
-        <div className='pageContainer redBackground'>
+        <div className='page-container redBackground'>
             <div className='padding-bottom'>
                 <h1 className='sectionHeader'>Athletes</h1>
                 <a 

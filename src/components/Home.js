@@ -17,21 +17,21 @@ export default function Home() {
 
             <div className='bg-gray'>
                 <div className='flex-container'>
-                    <Card className='card' sx={{ minWidth: 300 }}>
+                    <Card className='card' sx={{ minWidth: 350 }}>
                         <CardContent>
                             <h1>Community</h1>
                             <img src='/images/community1.png' alt='Community at the Outpost' className='rounded-image' />
                         </CardContent>
                     </Card>
 
-                    <Card className='card' sx={{ minWidth: 300 }}>
+                    <Card className='card' sx={{ minWidth: 350 }}>
                         <CardContent>
                             <h1>Accessibility</h1>
                             <img src='/images/accessibility1.png' alt='Accessibility at the Outpost' className='rounded-image' />
                         </CardContent>
                     </Card>
 
-                    <Card className='card' sx={{ minWidth: 300 }}>
+                    <Card className='card' sx={{ minWidth: 350 }}>
                         <CardContent>
                             <h1>Performance</h1>
                             <img src='/images/performance1.png' alt='Performance at the Outpost' className='rounded-image' />

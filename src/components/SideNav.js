@@ -11,6 +11,9 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
+import PriceCheckIcon from '@mui/icons-material/PriceCheck';
+import InfoIcon from '@mui/icons-material/Info';
+import SportsIcon from '@mui/icons-material/Sports';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -46,31 +49,61 @@ export default function SideNav() {
                                 />
                             </ListItemIcon>
                             <ListItemText>
-                            Home
+                                Home
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
                 </a>
 
-                {/* <a className='link-no-decoration'
-                     href="/pricing"
-                     rel="noreferrer">
+                <a className='link-no-decoration'
+                    href="/about-us"
+                    rel="noreferrer">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                <CalendarMonthIcon />
+                                <InfoIcon />
                             </ListItemIcon>
                             <ListItemText>
-                                Schedule/Pricing
+                                About Us
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
-                </a> */}
+                </a>
 
                 <a className='link-no-decoration'
-                     href="https://theoutpost.gymmasteronline.com/portal/signup"
-                     target="_blank"
-                     rel="noreferrer">
+                    href="/pricing"
+                    rel="noreferrer">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <PriceCheckIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Pricing
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='link-no-decoration'
+                    href="/coaching"
+                    rel="noreferrer">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <SportsIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Coaching
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='link-no-decoration'
+                    href="https://theoutpost.gymmasteronline.com/portal/signup"
+                    target="_blank"
+                    rel="noreferrer">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -83,7 +116,7 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='link-no-decoration' 
+                <a className='link-no-decoration'
                     href="https://forms.gle/ARkPTHWgBxu76Pny7"
                     target="_blank"
                     rel="noreferrer">
@@ -105,18 +138,18 @@ export default function SideNav() {
 
     return (
         <div>
- 
+
             <React.Fragment key={'left'}>
-            <Button onClick={toggleDrawer('left', true)}><MenuIcon style={{color: "white"}} /></Button>
-            <Drawer
-                anchor={'left'}
-                open={state['left']}
-                onClose={toggleDrawer('left', false)}
-            >
-                {list('left')}
-            </Drawer>
+                <Button onClick={toggleDrawer('left', true)}><MenuIcon style={{ color: "white" }} /></Button>
+                <Drawer
+                    anchor={'left'}
+                    open={state['left']}
+                    onClose={toggleDrawer('left', false)}
+                >
+                    {list('left')}
+                </Drawer>
             </React.Fragment>
-        
+
         </div>
     )
 }
