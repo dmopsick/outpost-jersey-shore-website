@@ -17,26 +17,34 @@ export default function Home() {
 
             <div className='bg-gray'>
                 <div className='flex-container'>
-                    <Card className='card' sx={{ minWidth: 350 }}>
-                        <CardContent>
-                            <h1>Community</h1>
-                            <img src='/images/community1.png' alt='Community at the Outpost' className='rounded-image' />
-                        </CardContent>
-                    </Card>
 
-                    <Card className='card' sx={{ minWidth: 350 }}>
-                        <CardContent>
-                            <h1>Accessibility</h1>
-                            <img src='/images/accessibility1.png' alt='Accessibility at the Outpost' className='rounded-image' />
-                        </CardContent>
-                    </Card>
+                    <a className='link-no-decoration' href="/about-us">
+                        <Card className='card' sx={{ minWidth: 350 }}>
+                            <CardContent>
+                                <h1>Community</h1>
+                                <img src='/images/community1.png' alt='Community at the Outpost' className='rounded-image' />
+                            </CardContent>
+                        </Card>
 
-                    <Card className='card' sx={{ minWidth: 350 }}>
-                        <CardContent>
-                            <h1>Performance</h1>
-                            <img src='/images/performance1.png' alt='Performance at the Outpost' className='rounded-image' />
-                        </CardContent>
-                    </Card>
+                    </a>
+
+                    <a className='link-no-decoration' href="/pricing">
+                        <Card className='card' sx={{ minWidth: 350 }}>
+                            <CardContent>
+                                <h1>Accessibility</h1>
+                                <img src='/images/accessibility1.png' alt='Accessibility at the Outpost' className='rounded-image' />
+                            </CardContent>
+                        </Card>
+                    </a>
+
+                    <a className='link-no-decoration' href="/coaching">
+                        <Card className='card' sx={{ minWidth: 350 }}>
+                            <CardContent>
+                                <h1>Performance</h1>
+                                <img src='/images/performance1.png' alt='Performance at the Outpost' className='rounded-image' />
+                            </CardContent>
+                        </Card>
+                    </a>
                 </div>
             </div>
 
@@ -60,7 +68,7 @@ export default function Home() {
                     <p className='large-body-text'>We care deeply about you, your training journey, and providing a <strong>unique and empowering</strong> environment to foster your fitness.</p>
                     <p className='large-body-text'>Our community is built <strong>BY and FOR the people</strong>, and we are committed to making sure our space is accessible to all who want to be a part of the Outpost</p>
                     <ul className='info-list margin-top'>
-                        <li className='info-list-item'>Affordable monthly-memberships with <a href='#'>no contracts ever</a></li>
+                        <li className='info-list-item'>Affordable monthly-memberships with <a href='/pricing'>no contracts ever</a></li>
                         <li className='info-list-item'>Expert coaching services available through a multitude of avenues - private, small group, hybrid, or fully remote coaching. </li>
                         <li className='info-list-item'>24/7 access to one of the best training environments the Jersey Shore has to offer</li>
                         <li className='info-list-item'><del>Handsome, funny, witty, humble owners</del></li>

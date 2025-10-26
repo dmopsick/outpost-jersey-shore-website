@@ -32,7 +32,7 @@ li {
   text-align: left;
 }
 
-.sectionHeader {
+.section-header {
   font-size: 48px;
   margin: auto;
   text-align: center;
@@ -64,9 +64,9 @@ li {
   height: 1200px;
 }
 
-.bodyText {
+.body-text {
   margin: auto;
-  width: 85%;
+  width: 90%;
 }
 
 .large-body-text {
@@ -191,6 +191,10 @@ li {
 }
 
 .section-4-hero {
+  width: 100%;
+}
+
+.about-us-hero {
   width: 100%;
 }
 

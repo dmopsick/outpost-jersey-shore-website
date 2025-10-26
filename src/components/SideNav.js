@@ -12,7 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import PriceCheckIcon from '@mui/icons-material/PriceCheck';
-import InfoIcon from '@mui/icons-material/Info';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import SportsIcon from '@mui/icons-material/Sports';
 
 export default function SideNav() {
@@ -61,7 +61,7 @@ export default function SideNav() {
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                <InfoIcon />
+                                <EmojiPeopleIcon />
                             </ListItemIcon>
                             <ListItemText>
                                 About Us
