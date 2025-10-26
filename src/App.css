@@ -181,6 +181,11 @@ a {
   border-radius: 50%;
 }
 
+.section3Hero {
+  width: 33%;
+  margin: 10px
+}
+
 .card {
   flex-basis: 32%;
   margin: 25px auto;

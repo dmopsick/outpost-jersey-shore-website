@@ -57,37 +57,45 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id="section2"  className='bg-gray'>
+            <div id="section2" className='bg-gray'>
                 <div className='cardContainer'>
-   <Card className='card' sx={{ minWidth: 300 }}>
-                    <CardContent>
-                        <h1>Community</h1>
-                        <img src='/images/community1.png' className='roundedImage' />
-                    </CardContent>
-                </Card>
-                
+                    <Card className='card' sx={{ minWidth: 300 }}>
+                        <CardContent>
+                            <h1>Community</h1>
+                            <img src='/images/community1.png' className='roundedImage' />
+                        </CardContent>
+                    </Card>
 
-                <Card className='card' sx={{ minWidth: 300 }}>
-                    <CardContent>
-                        <h1>Accessibility</h1>
-                        <img src='/images/accessibility1.png' className='roundedImage' />
-                    </CardContent>
-                </Card>
+                    <Card className='card' sx={{ minWidth: 300 }}>
+                        <CardContent>
+                            <h1>Accessibility</h1>
+                            <img src='/images/accessibility1.png' className='roundedImage' />
+                        </CardContent>
+                    </Card>
 
-                <Card className='card' sx={{ minWidth: 300 }}>
-                    <CardContent>
-                        <h1>Performance</h1>
-                        <img src='/images/performance1.png' className='roundedImage' />
-                    </CardContent>
-                </Card>
+                    <Card className='card' sx={{ minWidth: 300 }}>
+                        <CardContent>
+                            <h1>Performance</h1>
+                            <img src='/images/performance1.png' className='roundedImage' />
+                        </CardContent>
+                    </Card>
                 </div>
-             
-
-
             </div>
 
             <div id="training" className='section'>
-            
+                <h1>Your health is too important to waste time at the wrong gym</h1>
+                <h3>Overcrowded commercial gyms </h3>
+                <h3>Watered down group coaching</h3>
+                <img src='/images/section-3-hero.png' className='squareImage' />
+                <Button className='button'
+                    variant="contained"
+                    size="small"
+                    target="_blank"
+                    href="https://forms.gle/ARkPTHWgBxu76Pny7">
+                    Talk to the owner
+                </Button>
+
+
             </div>
         </div>
 
