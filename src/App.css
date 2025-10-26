@@ -175,3 +175,8 @@ a {
   padding: 300px 25px;
   font-size: 3em;
 }
+
+.roundedImage {
+  width: 50%;
+  border-radius: 50%;
+}
