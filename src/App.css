@@ -166,27 +166,12 @@ a {
 
 }
 
-#outpostWithFlagSlide {
+#landingPageImage {
   display: block;
-  background-image: url('/public/images/outpostWithFlag.jpg');
-}
-
-#olympicPadsSlide {
   background-image: url('/public/images/olympicPads.jpg');
 }
 
-#squatRacksSlide {
-  background-image: url('/public/images/squatRacks.jpg');
-}
-
-#turfSlide {
-  background-image: url('/public/images/turf.jpg');
-}
-
-#smallOutpostSlide {
-  background-image: url('/public/images/smallOutpost.jpg');
-}
-
-#largeOutpostSlide {
-  background-image: url('/public/images/largeOutpost.jpg');
+.heroText {
+  padding: 300px 25px;
+  font-size: 3em;
 }

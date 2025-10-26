@@ -46,159 +46,14 @@ const useStyles = makeStyles(theme => ({
 export default function Home() {
     const classes = useStyles();
 
-    useEffect(() => {
-        var myIndex = 1; // Holds place in the slideshow
-
-        const backgroundSlider = setInterval(() => {
-            var i;
-            var x = document.querySelectorAll('.sectionWithBackgroundImage');
-
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1;
-            }
-            // Hide previous   
-            x[myIndex - 1].style.display = "block";
-
-        }, 3000);
-
-
-        return () => clearInterval(backgroundSlider);
-    });
-
     return (
         <div className='home-container center-text black-background'>
             <div className="section">
-                <div id="outpostWithFlagSlide" className='sectionWithBackgroundImage'>
-                    <div className={classes.movingArrowContainer}>
-
-                        <div class={classes.landingPageLogoContainer}>
-                            <img src="/logo1200.png"
-                                alt="Outpost Jersey Shore Logo Logo"
-                                className={classes.landingPageLogo}
-                            />
-
-                            <Link to="section2"
-                                smooth={true}
-                                duration={500}
-                                style={{
-                                    color: "white",
-                                    flexBasis: "100%"
-                                }}>
-                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                            </Link>
-                        </div>
-                    </div>
+                <div id="landingPageImage" className='sectionWithBackgroundImage'>
+                    <h1 className='heroText'>
+                    A fitness playground for the kid in all of us
+                    </h1>
                 </div>
-
-                <div id="turfSlide" className='sectionWithBackgroundImage'>
-                    <div className={classes.movingArrowContainer}>
-                        <div class={classes.landingPageLogoContainer}>
-                            <img src="/logo1200.png"
-                                alt="Outpost Jersey Shore Logo Logo"
-                                className={classes.landingPageLogo}
-                            />
-
-                            <Link to="section2"
-                                smooth={true}
-                                duration={500}
-                                style={{
-                                    color: "white",
-                                    flexBasis: "100%"
-                                }}>
-                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="largeOutpostSlide" className='sectionWithBackgroundImage'>
-                    <div className={classes.movingArrowContainer}>
-                        <div class={classes.landingPageLogoContainer}>
-                            <img src="/logo1200.png"
-                                alt="Outpost Jersey Shore Logo Logo"
-                                className={classes.landingPageLogo}
-                            />
-
-                            <Link to="section2"
-                                smooth={true}
-                                duration={500}
-                                style={{
-                                    color: "white",
-                                    flexBasis: "100%"
-                                }}>
-                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="squatRacksSlide" className='sectionWithBackgroundImage'>
-                    <div className={classes.movingArrowContainer}>
-                        <div class={classes.landingPageLogoContainer}>
-                            <img src="/logo1200.png"
-                                alt="Outpost Jersey Shore Logo Logo"
-                                className={classes.landingPageLogo}
-                            />
-
-                            <Link to="section2"
-                                smooth={true}
-                                duration={500}
-                                style={{
-                                    color: "white",
-                                    flexBasis: "100%"
-                                }}>
-                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="olympicPadsSlide" className='sectionWithBackgroundImage'>
-                    <div className={classes.movingArrowContainer}>
-                        <div class={classes.landingPageLogoContainer}>
-                            <img src="/logo1200.png"
-                                alt="Outpost Jersey Shore Logo Logo"
-                                className={classes.landingPageLogo}
-                            />
-
-                            <Link to="section2"
-                                smooth={true}
-                                duration={500}
-                                style={{
-                                    color: "white",
-                                    flexBasis: "100%"
-                                }}>
-                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="smallOutpostSlide" className='sectionWithBackgroundImage'>
-                    <div className={classes.movingArrowContainer}>
-                        <div class={classes.landingPageLogoContainer}>
-                            <img src="/logo1200.png"
-                                alt="Outpost Jersey Shore Logo Logo"
-                                className={classes.landingPageLogo}
-                            />
-
-                            <Link to="section2"
-                                smooth={true}
-                                duration={500}
-                                style={{
-                                    color: "white",
-                                    flexBasis: "100%"
-                                }}>
-                                <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
             <div id="section2" className='longSection'>
@@ -236,7 +91,7 @@ export default function Home() {
                 <h1 className='sectionHeader'>Join our community</h1>
                 <p className='sectionCaption'>
                     Need a little coaching guidance to get started? Tap in with Coach Shane and Coach Rob to get started with some coaching to take your game and your fitness journey to the next level - go to ‘Learn More’ to inquire about coaching
-                    <br/>
+                    <br />
                     Otherwise get yourself rolling with our online sign-up - hit the link, fill out some basic info, and get started today!
 
                 </p>
