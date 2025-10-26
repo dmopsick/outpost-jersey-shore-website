@@ -1,17 +1,3 @@
-@keyframes arrow-jump {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    -o-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -34,14 +20,14 @@ li {
   font-family: "Varta" !important;
 }
 
-.infoList {
+.info-list {
   text-align: left;
   width: 85%;
   margin: auto;
   font-size: 18px;
 }
 
-.infoListItem {
+.info-list-item {
   margin-bottom: 5px;
   text-align: left;
 }
@@ -53,14 +39,15 @@ li {
   width: 96%;
 }
 
-.sectionSubheader {
+.section-subheader {
   font-size: 32px;
   margin: auto;
   text-align: center;
   width: 98%;
+  padding: 10px;
 }
 
-.sectionCaption {
+.section-caption {
   font-size: 22px;
   width: 90%;
   margin: auto;
@@ -82,14 +69,10 @@ li {
   width: 85%;
 }
 
-.largeBodyText {
+.large-body-text {
   margin: auto;
   width: 85%;
   font-size: 17px;
-}
-
-a {
-  color: skyblue
 }
 
 .pageContainer {
@@ -118,13 +101,9 @@ a {
   width: 50%;
 }
 
-.linkNoDecoration {
+.link-no-decoration {
   color: rgb(0, 0, 0, 0.87);
   text-decoration: none;
-}
-
-.centerText {
-  text-align: center;
 }
 
 .socialIconContainer {
@@ -133,11 +112,11 @@ a {
   margin: auto;
 }
 
-.socialIconLink {
+.social-icon-link {
   color: white;
 }
 
-.marginTop {
+.margin-top {
   margin-top: 25px;
 }
 
@@ -145,7 +124,7 @@ a {
   margin-bottom: 25px;
 }
 
-.paddingBottom {
+.padding-bottom {
   padding-bottom: 55px;
 }
 
@@ -154,34 +133,31 @@ a {
   margin: 50px !important;
 }
 
-/* Homepage slideshow */
-
-.sectionWithBackgroundImage {
-  display: none;
+#landing-page-image {
+  display: block;
+  background-image: url('/public/images/olympicPads.jpg');
+  opacity: 80%;
   height: 825px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  opacity: 80%;
-
 }
 
-#landingPageImage {
-  display: block;
-  background-image: url('/public/images/olympicPads.jpg');
-}
-
-.heroText {
+.hero-text {
   padding: 300px 25px;
   font-size: 3em;
 }
 
-.roundedImage {
-  width: 50%;
+.mini-hero-text {
+  padding: 25px;
+}
+
+.rounded-image {
+  width: 75%;
   border-radius: 50%;
 }
 
-.section3Hero {
+.section-3-hero {
   width: 33%;
   margin: 10px
 }
@@ -191,12 +167,34 @@ a {
   margin: 25px auto;
 }
 
-.cardContainer {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   padding: 25px;
+  width: 100%;
+}
+
+.flex-half {
+  flex-basis: 50%;
+  width: 100%;
+  min-width: 350px;
 }
 
 .bg-gray {
   background-color: #d3d3d3;
+}
+
+.section-3-hero {
+  width: 95%;
+  margin: auto;
+  border-radius: .5px;
+}
+
+.section-4-hero {
+  width: 100%;
+}
+
+.black-text {
+  color: black;
+
 }

@@ -4,18 +4,18 @@ export default function Athletes() {
 
     return(
         <div className='pageContainer redBackground'>
-            <div className='paddingBottom'>
+            <div className='padding-bottom'>
                 <h1 className='sectionHeader'>Athletes</h1>
                 <a 
                     target="_blank" 
                     rel="noreferrer" 
                     href="https://forms.gle/HtDgdFHq6pn87mHm7"
-                    className='centerText'
+                    className='center-text'
                 >
                     <h2>Join Garden State Performance <AddIcon /></h2>
                 </a>
-                <p className='sectionCaption'>Strength. Speed. Power. Agility.</p>
-                <p className='largeBodyText'>
+                <p className='section-caption'>Strength. Speed. Power. Agility.</p>
+                <p className='large-body-text'>
                     These are all phenomenal athletic qualities. The kind of qualities that can be trained and honed in hard, diligent off-seasons. 
                     The kind of qualities that can separate good from great in some instances. The kind of qualities that we are told are sought “at the next level”, so many coaches become experts in developing them.
                     <br/><br/>
@@ -31,14 +31,14 @@ export default function Athletes() {
                     <br/><br/>
                     I believe that sports and competition can be for everyone, but as a coach I cannot promise that GSP is for everyone. Some basic prerequisites we look for:
                 </p>
-                <ul className='infoList marginBottom'>
+                <ul className='info-list marginBottom'>
                     <li>Athlete must be at least 14 years old</li>
                     <li>Parents must not be a "helicopter parent" - drop your kid off and let them have some time to themselves</li>
                     <li>Athletes must be committed to success on multiple fronts (changes in diet, going to bed earlier, etc.)</li>
                     <li>Depending on age and training experience, at minimum 1 or 2 training sessions per week.</li>
                     <li>Athletes must be open to competition, challenges, feedback, and coaching. I am not a yeller but I do talk to all the kids like adults, and I expect it to be received in a mature manner. </li>
                 </ul>
-                <p className='largeBodyText'>
+                <p className='large-body-text'>
                     If you have made it this far and feel like you or your child are a good fit for our programming, access the link below to fill out our Athlete Inquiry survey and we&#8217;ll set up your first session!
                 </p>
 
@@ -46,7 +46,7 @@ export default function Athletes() {
                     target="_blank" 
                     rel="noreferrer" 
                     href="https://forms.gle/HtDgdFHq6pn87mHm7"
-                    className='centerText'
+                    className='center-text'
                 >
                     <h2>Join Garden State Performance <AddIcon /></h2>
                 </a>

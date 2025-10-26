@@ -3,18 +3,18 @@ import AddIcon from '@mui/icons-material/Add';
 export default function Adults() {
     return (
         <div className='pageContainer redBackground'>
-            <div className='paddingBottom'>
+            <div className='padding-bottom'>
             <h1 className='sectionHeader'>Adult Fitness</h1>
                 <a 
                     target="_blank" 
                     rel="noreferrer" 
                     href="https://forms.gle/BPRZMMSrt8LNPsgH7 "
-                    className='centerText'
+                    className='center-text'
                 >
                     <h2>Join Garden State Performance <AddIcon /></h2>
                 </a>
 
-                <p className='largeBodyText'>
+                <p className='large-body-text'>
                     Being a healthy, fully realized adult is simple.
                     <br/><br/>
                     Eat right. Exercise. Socialize with loved ones. Keep learning. I mean, that&#8217;s like four things, how hard can it really be?
@@ -44,21 +44,21 @@ export default function Adults() {
                     <br/><br/>
                     I believe health and wellness are for everyone, but I cannot promise that our training and coaching is for everyone. Some basic prerequisites I ask for with my clients:
                 </p>
-                <ul className='infoList'>
+                <ul className='info-list'>
                     <li>Are over 25 years old and live in Monmouth County, NJ*</li>
                     <li>Are open to coaching and can remain optimistic in the face of feedback and challenges</li>
                     <li>Understand that results require commitments outside of a few hours in the gym each week</li>
                     <li>Minimum 1 in-person training session per week**</li>
                     <li>Are committed to making a positive change in their life, regardless of wherever they are starting from</li>
                 </ul>
-                <p className='largeBodyText'>
+                <p className='large-body-text'>
                 If you have made it this far and feel like you are a good fit for our programming, access the link below to fill out our Private Training Inquiry survey and we&#8217;ll set up your first session!
                 </p>
                 <a 
                     target="_blank" 
                     rel="noreferrer" 
                     href="https://forms.gle/BPRZMMSrt8LNPsgH7 "
-                    className='centerText'
+                    className='center-text'
                 >
                     <h2>Join Garden State Performance <AddIcon /></h2>
                 </a>

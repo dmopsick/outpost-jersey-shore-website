@@ -33,7 +33,7 @@ export default function SideNav() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                <a className='linkNoDecoration' href="/">
+                <a className='link-no-decoration' href="/">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -52,7 +52,7 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                {/* <a className='linkNoDecoration'
+                {/* <a className='link-no-decoration'
                      href="/pricing"
                      rel="noreferrer">
                     <ListItem disablePadding>
@@ -67,7 +67,7 @@ export default function SideNav() {
                     </ListItem>
                 </a> */}
 
-                <a className='linkNoDecoration'
+                <a className='link-no-decoration'
                      href="https://theoutpost.gymmasteronline.com/portal/signup"
                      target="_blank"
                      rel="noreferrer">
@@ -77,13 +77,13 @@ export default function SideNav() {
                                 <DirectionsRunIcon />
                             </ListItemIcon>
                             <ListItemText>
-                                Join
+                                Online sign up
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' 
+                <a className='link-no-decoration' 
                     href="https://forms.gle/ARkPTHWgBxu76Pny7"
                     target="_blank"
                     rel="noreferrer">

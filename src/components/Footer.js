@@ -10,7 +10,7 @@ export default function Footer() {
             height: "200px",
             paddingTop: "10px",
             paddingBottom: "20px",
-            textAlign: "center"
+            textAlign: "center",
         }}>
             <div
                 style={{
@@ -21,7 +21,7 @@ export default function Footer() {
                     maxWidth: "500px"
                 }}>
                     <div className='socialIconContainer'>
-                        <a className='socialIconLink'
+                        <a className='social-icon-link'
                             target="_blank"
                             rel="noreferrer" 
                             href="https://www.instagram.com/outpostjerseyshore/">
