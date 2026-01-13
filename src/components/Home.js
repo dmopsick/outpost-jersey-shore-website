@@ -17,8 +17,8 @@ export default function Home() {
       <div className='bg-gray'>
         <div className='flex-container'>
 
-          <a className='link-no-decoration' href="/about-us">
-            <Card className='card' sx={{minWidth: 350}}>
+          <a className='link-no-decoration card' href="/about-us">
+            <Card>
               <CardContent>
                 <h1>Community</h1>
                 <img src='/images/community1.png' alt='Community at the Outpost' className='rounded-image' />
@@ -27,8 +27,8 @@ export default function Home() {
 
           </a>
 
-          <a className='link-no-decoration' href="/pricing">
-            <Card className='card' sx={{minWidth: 350}}>
+          <a className='link-no-decoration card' href="/pricing">
+            <Card>
               <CardContent>
                 <h1>Accessibility</h1>
                 <img src='/images/accessibility1.png' alt='Accessibility at the Outpost' className='rounded-image' />
@@ -36,8 +36,8 @@ export default function Home() {
             </Card>
           </a>
 
-          <a className='link-no-decoration' href="/coaching">
-            <Card className='card' sx={{minWidth: 350}}>
+          <a className='link-no-decoration card' href="/coaching">
+            <Card>
               <CardContent>
                 <h1>Performance</h1>
                 <img src='/images/performance1.png' alt='Performance at the Outpost' className='rounded-image' />

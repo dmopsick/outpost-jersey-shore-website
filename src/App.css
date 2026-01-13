@@ -163,8 +163,10 @@ li {
 }
 
 .card {
+  display: flex !important;
   flex-basis: 32%;
   margin: 25px auto;
+  min-width: 350px;
 }
 
 .flex-container {
