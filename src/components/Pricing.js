@@ -13,7 +13,11 @@ export default function Pricing() {
 
         <li>Adult Group Fitness - $175/month
           <ul>
-            <li>Unlimited sessions during our Adult Group Fitness sessions + 24/7 access outside of the coaching hours</li>
+            <li>
+              Unlimited sessions during our Adult Group Fitness sessions + 24/7 access
+              {' '}
+              outside of the coaching hours
+            </li>
           </ul>
         </li>
 
