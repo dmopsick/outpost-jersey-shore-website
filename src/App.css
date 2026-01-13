@@ -106,7 +106,7 @@ li {
   text-decoration: none;
 }
 
-.socialIconContainer {
+.social-icon-container {
   flex-basis: 25%;
   text-align: center;
   margin: auto;
@@ -120,7 +120,7 @@ li {
   margin-top: 25px;
 }
 
-.marginBottom {
+.margin-bottom {
   margin-bottom: 25px;
 }
 
@@ -158,8 +158,9 @@ li {
 }
 
 .section-3-hero {
-  width: 33%;
-  margin: 10px
+  width: 95%;
+  margin: auto;
+  border-radius: .5px;
 }
 
 .card {
@@ -184,12 +185,6 @@ li {
 
 .bg-gray {
   background-color: #d3d3d3;
-}
-
-.section-3-hero {
-  width: 95%;
-  margin: auto;
-  border-radius: .5px;
 }
 
 .section-4-hero {

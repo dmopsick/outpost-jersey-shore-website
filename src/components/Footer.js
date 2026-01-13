@@ -19,7 +19,7 @@ export default function Footer() {
           margin: 'auto',
           maxWidth: '500px',
         }}>
-        <div className='socialIconContainer'>
+        <div className='social-icon-container'>
           <a className='social-icon-link'
             target="_blank"
             rel="noreferrer"

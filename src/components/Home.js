@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className='home-container center-text black-background'>
       <div>
-        <div id="landing-page-image" className='sectionWithBackgroundImage'>
+        <div id="landing-page-image" className='section-with-background-image'>
           <h1 className='hero-text'>
                         A fitness playground for the kid in all of us
           </h1>

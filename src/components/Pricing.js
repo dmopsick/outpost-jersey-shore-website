@@ -13,11 +13,7 @@ export default function Pricing() {
 
         <li>Adult Group Fitness - $175/month
           <ul>
-            <li>
-              Unlimited sessions during our Adult Group Fitness sessions + 24/7 access
-              {' '}
-              outside of the coaching hours
-            </li>
+            <li>Unlimited sessions during our Adult Group Fitness sessions + 24/7 access outside of the coaching hours</li>
           </ul>
         </li>
 
@@ -40,11 +36,7 @@ export default function Pricing() {
             <li>4 weeks of custom workouts</li>
             <li>Two (2) 30-minute calls or 1 in-person training session</li>
             <li>Text access to coaches (48 hour grace period)</li>
-            <li>
-              Includes monthly-membership to Outpost but you do not have to workout at
-              {' '}
-              our facility
-            </li>
+            <li>Includes monthly-membership to Outpost but you do not have to workout at our facility</li>
           </ul>
 
         </li>
