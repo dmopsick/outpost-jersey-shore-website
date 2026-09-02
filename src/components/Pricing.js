@@ -5,44 +5,24 @@ export default function Pricing() {
     <div className='padding-bottom page-container black-background'>
       <h1 className='section-header'>Pricing</h1>
       <ul className='info-list margin-top'>
-        <li>Outpost 24/7 Membership - $50/month
+        <li>Outpost 24/7 Membership - $55/month
           <ul>
-            <li>24/7-365 self-access to the best gym at the Jersey Shore! </li>
+            <li>24/7-365 self service access to the best gym at the Jersey Shore!</li>
           </ul>
         </li>
 
-        <li>Adult Group Fitness - $175/month
+        <li>Adult Group Fitness - $195/month
           <ul>
-            <li>
-              Unlimited sessions during our Adult Group Fitness sessions + 24/7 access
-              {' '}
-              outside of the coaching hours
-            </li>
+            <li>Unlimited sessions during our <em>Adult Group Fitness sessions</em> + 24/7 access outside of the coaching hours</li>
           </ul>
         </li>
 
-        <li>Private training (1-4 people) - $100/hour at Outpost + $120/hour for offsite sessions
+        <li>Private training (1 to 8 people) - $110/hour
           <ul>
             <li>Custom programming and the undivided attention of one of our coaches</li>
-            <li>Session rate can be split up to 4 people for small group training</li>
-            <li>5 sessions x $450 ($90/session) + 10 sessions x $800 ($80/session)</li>
+            <li>Session rate can be split up to 8 people for small group training</li>
+            <li>5 sessions x $500 ($100/session) + 10 sessions x $900 ($90/session)</li>
           </ul>
-        </li>
-
-        <li>After School Strength & Speed - $250 for 8 weeks of 2 sessions per week
-          <ul>
-            <li>$25 for single visits</li>
-          </ul>
-        </li>
-
-        <li>Custom Online Programming - $150 / month
-          <ul>
-            <li>4 weeks of custom workouts</li>
-            <li>Two (2) 30-minute calls or 1 in-person training session</li>
-            <li>Text access to coaches (48 hour grace period)</li>
-            <li>Includes monthly-membership to Outpost but you do not have to workout at our facility</li>
-          </ul>
-
         </li>
       </ul>
 

@@ -22,9 +22,9 @@ li {
 
 .info-list {
   text-align: left;
-  width: 85%;
+  width: 88%;
   margin: auto;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .info-list-item {
@@ -129,23 +129,39 @@ li {
 }
 
 .button {
+  font-family: "Bebas Neue" !important;
   font-size: 2rem !important;
   margin: 50px !important;
 }
 
 #landing-page-image {
   display: block;
-  background-image: url('/public/images/olympicPads.jpg');
-  opacity: 80%;
+  position: relative;
+  overflow: hidden;
   height: 825px;
+}
+
+#landing-page-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/public/images/olympicPads.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  opacity: 0.8;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-text {
+  position: relative;
+  z-index: 1;
   padding: 300px 25px;
   font-size: 3em;
+  -webkit-text-stroke: 1px #000;
+  paint-order: stroke fill;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 }
 
 .mini-hero-text {
@@ -155,12 +171,14 @@ li {
 .rounded-image {
   width: 75%;
   border-radius: 50%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 }
 
 .section-3-hero {
   width: 95%;
   margin: auto;
-  border-radius: .5px;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 }
 
 .card {
@@ -189,13 +207,19 @@ li {
 
 .section-4-hero {
   width: 100%;
+  border-radius: 10px;
 }
 
 .about-us-hero {
   width: 100%;
+  border-radius: 10pt;
 }
 
 .black-text {
   color: black;
+}
 
+.rounded-image-header {
+  font-size: 40px;
+  margin: .33em;
 }
