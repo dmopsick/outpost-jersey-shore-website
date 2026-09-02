@@ -4,7 +4,7 @@ export default function Coaching() {
   return (
     <div className='padding-bottom page-container black-background'>
       <h1 className="section-header">Coaching hours</h1>
-      <ul className='info-list margin-top'>
+      <ul className='info-list margin-top' style={{fontSize: '24px'}}>
         <li>Monday: 7-10 am / 4-6 pm</li>
         <li>Tuesday: 7-10 am</li>
         <li>Wednesday: 7-10 am</li>

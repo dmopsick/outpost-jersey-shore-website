@@ -13,15 +13,6 @@ const useStyles = makeStyles((theme) => ({
     height: '80px',
     color: 'white',
   },
-
-  header: {
-    fontFamily: 'Bebas Neue !important',
-    fontWeight: 'bold !important',
-    fontSize: '28px',
-    color: 'white',
-    textDecoration: 'none',
-  },
-
 }));
 
 export default function Header(props) {
@@ -35,8 +26,11 @@ export default function Header(props) {
         <AppBar>
           <Toolbar className={classes.navBar}>
             <SideNav />
-            <a className={classes.header} href ="/">
-                            Outpost Jersey Shore
+            <a style={{textDecoration: 'none'}} href="/">
+              <h1 style={{
+                fontSize: '28px !important',
+                color: 'white',
+              }}>Outpost Jersey Shore</h1>
             </a>
           </Toolbar>
         </AppBar>

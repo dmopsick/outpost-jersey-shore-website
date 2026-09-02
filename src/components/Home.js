@@ -1,15 +1,29 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 export default function Home() {
+  useEffect(() => {
+    const imagesToPreload = [
+      '/images/community1.png',
+      '/images/accessibility1.png',
+      '/images/performance1.png',
+      '/images/section-3-hero.png',
+      '/images/section-4-hero.png',
+    ];
+    imagesToPreload.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   return (
     <div className='home-container center-text black-background'>
       <div>
         <div id="landing-page-image" className='section-with-background-image'>
           <h1 className='hero-text'>
-                        FIND YOUR INNER ATHLETE
+            FIND YOUR INNER ATHLETE
           </h1>
         </div>
       </div>
@@ -57,7 +71,7 @@ export default function Home() {
           size="small"
           target="_blank"
           href="https://forms.gle/ARkPTHWgBxu76Pny7">
-                    Learn more
+          Learn more
         </Button>
       </div>
 
@@ -78,7 +92,7 @@ export default function Home() {
             size="small"
             target="_blank"
             href="https://forms.gle/ARkPTHWgBxu76Pny7">
-                        Learn More
+            Learn More
           </Button>
 
         </div>
